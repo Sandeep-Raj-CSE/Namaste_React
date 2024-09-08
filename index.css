@@ -1,0 +1,288 @@
+#container {
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+#heading {
+    color: #8b4513;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.nav-items {
+    font-size: 20px;
+}
+
+.nav-items > ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    margin: 0 15px;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 8px;
+}
+
+.nav-items > ul > li:hover {
+    background-color: #ffcccb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.res-card {
+    width: 250px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    overflow: hidden; /* Ensure content stays within the box */
+    box-sizing: border-box; /* Includes padding and border in the element's total width/height */
+}
+
+.res-card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #080808;
+}
+
+.card-logo {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.res-card h3 {
+    color: #333333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowed text */
+    text-overflow: ellipsis; /* Adds "..." for overflowed text */
+    
+}
+
+.res-card h4 {
+    color: #666666;
+    font-size: 1em;
+    margin: 5px 0;
+    white-space: nowrap; /* Same as above */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.res-cardContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px; /* Adds space between cards */
+}
+
+
+.top-rated{
+    background: linear-gradient(45deg, #6a5acd, #836fff);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-rated:hover {
+    background: linear-gradient(45deg, #836fff, #6a5acd);
+    transform: translateY(-2px);
+}
+
+
+.top-rated:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  /* Shimmer container */
+.shimmer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Shimmer box */
+.shimmer-box {
+    width: 100%;
+    height: 250px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shimmer animation */
+.shimmer-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 0.5) 50%, rgba(240, 240, 240, 0) 100%);
+    animation: shimmer 1.5s infinite;
+}
+
+/* Keyframes for shimmer effect */
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+/* Login button */
+.login {
+    background-color: #ff6600; /* Orange background */
+    color: white;              /* White text */
+    border: none;              /* Remove border */
+    padding: 10px 20px;        /* Padding inside the button */
+    font-size: 16px;           /* Text size */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect */
+.login:hover {
+    background-color: #ff4500; /* Darker orange on hover */
+    transform: scale(1.05);    /* Slightly larger on hover */
+}
+
+/* Active/Pressed effect */
+.login:active {
+    background-color: #cc3700; /* Even darker orange when pressed */
+    transform: scale(0.95);    /* Slightly smaller when pressed */
+}
+
+/* Focus effect (for accessibility) */
+.login:focus {
+    outline: 2px solid #ffcc99; /* Light orange outline on focus */
+    outline-offset: 2px;        /* Space between outline and button */
+}
+
+/* Container for search input, search button, and top-rated button */
+.fiter {
+    display: flex;
+    justify-content: center; /* Center the search section horizontally */
+  
+    background-color: #f9f9f9; /* Light background */
+    margin-bottom: 10px;       /* Space below the container */
+           /* Rounded corners for the container */
+   /* Subtle shadow for elevation */
+}
+
+/* Search container */
+.search {
+    display: flex;
+    align-items: center; /* Vertically align input and buttons */
+    gap: 10px;           /* Space between input and buttons */
+    max-width: 600px;    /* Optional: limit the width */
+    width: 100%;         /* Ensure the search container is responsive */
+}
+
+/* Search input */
+.search input[type="text"] {
+    flex-grow: 1;               /* Allow input to take full available space */
+    padding: 10px;              /* Padding inside the input */
+    border: 1px solid #ccc;     /* Light border */
+    border-radius: 8px;         /* Rounded corners */
+    font-size: 16px;            /* Text size */
+    outline: none;              /* Remove default outline */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+/* Change border color on focus */
+.search input[type="text"]:focus {
+    border-color: #ff6600; /* Orange border on focus */
+}
+
+/* Button styles (applies to both buttons) */
+.search button {
+    padding: 10px 20px;           /* Padding inside the button */
+    background-color: #ff6600;    /* Orange background */
+    color: white;                 /* White text */
+    border: none;                 /* Remove border */
+    border-radius: 8px;           /* Rounded corners */
+    cursor: pointer;              /* Pointer cursor on hover */
+    font-size: 16px;              /* Text size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect for buttons */
+.search button:hover {
+    background-color: #ff4500; /* Darker orange on hover */
+    transform: scale(1.05);    /* Slightly larger on hover */
+}
+
+/* Active/Pressed effect for buttons */
+.search button:active {
+    background-color: #cc3700; /* Even darker orange when pressed */
+    transform: scale(0.95);    /* Slightly smaller when pressed */
+}
+
+/* Specific style for "Top Rated Restaurant" button */
+.search .top-rated {
+    background-color: #28a745; /* Green background */
+}
+
+.search .top-rated:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.search .top-rated:active {
+    background-color: #1e7e34; /* Even darker green when pressed */
+}
+
+
+
+/* Restaurant Menu CSS */

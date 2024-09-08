@@ -1,0 +1,33 @@
+/* User.css */
+
+.name {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .role {
+    font-size: 22px;
+    color: #16a085;
+    margin-bottom: 15px;
+  }
+  
+  .technology {
+    font-size: 22px;
+    color: #2980b9;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  
+  ol {
+    font-size: 18px;
+    color: #34495e;
+    list-style-type: decimal-leading-zero;
+    padding-left: 20px;
+  }
+  
+  ol li {
+    margin-bottom: 8px;
+  }
+  

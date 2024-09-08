@@ -1,0 +1,299 @@
+.contact-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.contact-title {
+  text-align: center;
+  color: tomato;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.contact-details {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  color: #555;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.input-field {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.textarea {
+  resize: none;
+  height: 150px;
+}
+
+.submit-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  transition: background-color .3s;
+}
+
+.submit-button:hover {
+  background-color: #e5533b;
+}
+
+@media screen and (width <= 600px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.about-container {
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  display: flex;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-title {
+  color: #333;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+}
+
+.about-description {
+  color: #555;
+  margin-bottom: 15px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-image img {
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.name {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.role {
+  color: #16a085;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.technology {
+  color: #2980b9;
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+ol {
+  color: #34495e;
+  padding-left: 20px;
+  font-size: 18px;
+  list-style-type: decimal-leading-zero;
+}
+
+ol li {
+  margin-bottom: 8px;
+}
+
+.error-container {
+  color: #333;
+  text-align: center;
+  background-color: #f7f7f7;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+}
+
+.error-content {
+  max-width: 50%;
+}
+
+.error-title {
+  color: tomato;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.error-message {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.error-button {
+  color: #fff;
+  background-color: tomato;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color .3s;
+  display: inline-block;
+}
+
+.error-button:hover {
+  background-color: #e5533b;
+}
+
+.error-image img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px #0003;
+}
+
+@media screen and (width <= 768px) {
+  .error-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .error-content {
+    max-width: 100%;
+  }
+
+  .error-title {
+    font-size: 2.5rem;
+  }
+
+  .error-message {
+    font-size: 1.2rem;
+  }
+
+  .error-image img {
+    margin-top: 20px;
+  }
+}
+
+.res-menu {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px #0000001a;
+}
+
+.res-name {
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.res-cuisine {
+  color: #777;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.res-cotm {
+  color: #888;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.res-itemcard {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.res-itemcard li {
+  color: #444;
+  background-color: #fff;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1.1em;
+  display: flex;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.res-itemcard li:after {
+  content: "₹" attr(data-price);
+  color: #555;
+  font-weight: bold;
+}
+
+.res-itemcard li:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+@media (width <= 600px) {
+  .res-menu {
+    padding: 10px;
+  }
+
+  .res-name {
+    font-size: 2em;
+  }
+
+  .res-itemcard li {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .res-itemcard li:after {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
