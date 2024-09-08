@@ -1,0 +1,89 @@
+/* Restaurant Menu Container */
+.res-menu {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Restaurant Name */
+  .res-name {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Restaurant Cuisines */
+  .res-cuisine {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  /* Cost for Two Message */
+  .res-cotm {
+    font-size: 1.1em;
+    color: #888;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Menu Items List */
+  .res-itemcard {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual Menu Item */
+  .res-itemcard li {
+    font-size: 1.1em;
+    color: #444;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Price Formatting */
+  .res-itemcard li::after {
+    content: "₹" attr(data-price);
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Hover effect for menu items */
+  .res-itemcard li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .res-menu {
+      padding: 10px;
+    }
+  
+    .res-name {
+      font-size: 2em;
+    }
+  
+    .res-itemcard li {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .res-itemcard li::after {
+      margin-top: 10px;
+    }
+  }
+  

@@ -1,0 +1,260 @@
+#container {
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+#heading {
+  color: #8b4513;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #fff;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  display: flex;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.logo {
+  border-radius: 8px;
+  width: 120px;
+}
+
+.nav-items {
+  font-size: 20px;
+}
+
+.nav-items > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  border-radius: 8px;
+  margin: 0 15px;
+  padding: 10px 15px;
+  transition: color .3s, background-color .3s;
+}
+
+.nav-items > ul > li:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffcccb;
+}
+
+.res-card {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 250px;
+  margin: 20px;
+  padding: 15px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+  box-shadow: 0 4px 16px #0000001a;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid #080808;
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px #0003;
+}
+
+.card-logo {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.res-card h3 {
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  overflow: hidden;
+}
+
+.res-card h4 {
+  color: #666;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 5px 0;
+  font-size: 1em;
+  overflow: hidden;
+}
+
+.search {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.res-cardContainer {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+  display: flex;
+}
+
+.top-rated {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(45deg, #6a5acd, #836fff);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .3s, transform .2s;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.top-rated:hover {
+  background: linear-gradient(45deg, #836fff, #6a5acd);
+  transform: translateY(-2px);
+}
+
+.top-rated:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px #0003;
+}
+
+.shimmer {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  display: grid;
+}
+
+.shimmer-box {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-box:before {
+  content: "";
+  background: linear-gradient(90deg, #f0f0f000 0%, #f0f0f080 50%, #f0f0f000 100%);
+  width: 100%;
+  height: 100%;
+  animation: 1.5s infinite shimmer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.login {
+  color: #fff;
+  cursor: pointer;
+  background-color: #f60;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color .3s, transform .2s;
+}
+
+.login:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+.login:active {
+  background-color: #cc3700;
+  transform: scale(.95);
+}
+
+.login:focus {
+  outline-offset: 2px;
+  outline: 2px solid #fc9;
+}
+
+.fiter {
+  background-color: #f9f9f9;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.search {
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+}
+
+.search input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  transition: border-color .3s;
+}
+
+.search input[type="text"]:focus {
+  border-color: #f60;
+}
+
+.search button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #f60;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color .3s, transform .2s;
+}
+
+.search button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+.search button:active {
+  background-color: #cc3700;
+  transform: scale(.95);
+}
+
+.search .top-rated {
+  background-color: #28a745;
+}
+
+.search .top-rated:hover {
+  background-color: #218838;
+}
+
+.search .top-rated:active {
+  background-color: #1e7e34;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
